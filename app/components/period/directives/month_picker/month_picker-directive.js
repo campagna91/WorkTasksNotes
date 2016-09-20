@@ -16,7 +16,6 @@
 				return linkFunc(scope, elem, attrs, ctrl, transcludeFn, logger, ics);
 			},
 			controller: MonthPickerController,
-			controllerAs: 'vm',
 			templateUrl: 'app/components/period/directives/month_picker/month_picker_main-view.html'
 		};
 
