@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/campagna91/WorkTasksNotes#readme",
   "dependencies": {
-    "lovefield": "^2.1.10"
+    "lovefield": "^2.1.10",
+    "moment": "^2.15.1"
   }
 }
