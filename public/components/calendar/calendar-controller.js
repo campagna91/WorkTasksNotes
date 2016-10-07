@@ -31,7 +31,7 @@
 		 * @description Initializate calendar component
          */
         function init() {
-            scope.date = new Date();
+            scope.date = moment();
         }
 
 		/**
