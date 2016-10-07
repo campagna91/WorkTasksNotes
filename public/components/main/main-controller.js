@@ -31,9 +31,9 @@
             logger.setLogLevel({log: 0, track: 0, warn: 0});
             logger.track(logName, "init");
 
-            scope.date = new Date();
-            scope.year = scope.date.getFullYear();
-            scope.month = scope.date.getMonth();
+            scope.date = moment();
+            scope.year = scope.date.year();
+            scope.month = scope.date.month();
 
             // Decorate Date object
             /***
