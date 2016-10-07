@@ -1,0 +1,22 @@
+{
+  "name": "worktasksnote",
+  "version": "1.0.0",
+  "description": "a system that allow to track daily tasks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/campagna91/WorkTasksNotes.git"
+  },
+  "author": "Simone Campagna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/campagna91/WorkTasksNotes/issues"
+  },
+  "homepage": "https://github.com/campagna91/WorkTasksNotes#readme",
+  "dependencies": {
+    "lovefield": "^2.1.10"
+  }
+}
