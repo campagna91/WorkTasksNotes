@@ -1,0 +1,31 @@
+<!-- Modal Structure -->
+<div id="setting_panel" class="modal bottom-sheet">
+    <div class="modal-content">
+        <h4>Database selection</h4>
+        <p>Please select xml database file:</p>
+
+        <!--File input-->
+        <form action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input id="jsonDb"
+                           type="file"
+                           file-to-read="JSONToParse"
+                           file-reader/>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="modal-footer">
+        <a href=""
+           class="modal-action waves-effect waves-green btn"
+           ng-click="setJSONDbContent()">Confirm</a>
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
