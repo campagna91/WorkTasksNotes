@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tasks Overview</title>
+
+		<!-- Angular framework -->
+		<script src="assets/js/angular.min.js"></script>
+
+		<!-- Main module -->
+		<script src="../app.js"></script>
+
+		<!-- Components -->
+
+		<!--Lovefield-->
+		<script src="../node_modules/lovefield/dist/lovefield.min.js"></script>
+
+        <!-- Task entities -->
+        <script src="components/task/task-controller.js"></script>
+        <script src="components/task/tasks-service.js"></script>
+
+		<!-- Services -->
+		<script src="components/logger/logger-service.js"></script>
+		<script src="components/resource/resource-service.js"></script>
+		<script src="components/integrity_check/integrity_check-service.js"></script>
+		<script src="components/date_utilities/month_translation_utility-service.js"></script>
+
+		<!-- History -->
+		<script src="components/history/history-controller.js"></script>
+
+		<!-- Period -->
+		<script src="components/period/period-controller.js"></script>
+		<script src="components/period/directives/year_picker/year_picker-directive.js"></script>
+		<script src="components/period/directives/month_picker/month_picker-directive.js"></script>
+
+		<!-- Shell -->
+		<script src="components/shell/shell-controller.js"></script>
+
+		<!-- Calendar -->
+		<script src="components/calendar/directives/day/day-directive.js"></script>
+		<script src="components/calendar/calendar-controller.js"></script>
+
+		<!-- UI libraries -->
+		<link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/system.css">
+		<script src="assets/js/jquery-3.1.0.min.js"></script>
+		<script src="assets/js/materialize.min.js"></script>
+
+		<!-- Main -->
+		<script src="components/main/main-controller.js"></script>
+
+        <!--Setting-->
+        <script src="components/setting/setting-controller.js"></script>
+        <script src="components/setting_panel/panel-controller.js"></script>
+        <script src="components/setting_panel/directives/file_reader/file_reader-directive.js"></script>
+
+		<!-- Google material icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	</head>
+	<body ng-app="wtd">
+
+        <!--Settings-->
+        <div id="setting"
+             ng-include="'components/setting/setting_main-view.html'"
+             ng-controller="settingController">
+        </div>
+
+        <!--Setting's setting_panel-->
+        <div id="panel"
+             ng-include="'components/setting_panel/panel_main-view.html'"
+             ng-controller="panelController">
+        </div>
+
+		<!--History component-->
+		<div id="history"
+             ng-include="'components/history/history_main-view.html'"
+             ng-controller="historyController">
+        </div>
+
+		<!--Period component-->
+		<div id="period"
+             ng-include="'components/period/period_main-view.html'"
+             ng-controller="periodController">
+        </div>
+
+		<!--Calendar component-->
+		<div id="calendar"
+             ng-include="'components/calendar/calendar_main-view.html'"
+             ng-controller="calendarController">
+        </div>
+
+		<!--Shell component-->
+		<div id="shell"
+             ng-include="'components/shell/shell_main-view.html'"
+             ng-controller="shellController">
+        </div>
+
+		<!--Main controller-->
+		<div id="main" ng-controller="mainController"></div>
+
+	</body>
+</html>
