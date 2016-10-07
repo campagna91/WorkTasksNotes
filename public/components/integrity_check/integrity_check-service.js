@@ -46,7 +46,7 @@
 
 			return isValidNumber(year)
 				&& year > 0
-				&& year <= new Date().getFullYear();
+				&& year <= moment().year();
 		}
 
 		/**
@@ -133,24 +133,10 @@
 		 * @param {dayInAMonth} bis - say if is a leap year
 		 * @returns {number} represents number of days
 		 */
-		function dayInAMonth(month, leap) {
+		function dayInAMonth(month) {
             logger.track(logName, "dayInAMonth");
 
-            var days = -1;
-			switch(month) {
-				case(4):
-				case(6):
-				case(9):
-				case(11):
-					days = 30;
-					break;
-				case(2):
-					days = (leap === true) ? 29 : 28;
-					break;
-				default:
-					days = 31;
-			}
-			return days;
+			return month.daysInMonth();
 		}
 
 		/**
