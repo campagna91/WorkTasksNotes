@@ -22,7 +22,7 @@
 		function linkFunc(scope, elem, attrs, ctrl, transcludeFn, logger, ics) {
 			if(!ics.isValidMonth(scope.month)) {
 				logger.warn("monthPicker", "month not passed as argument of directive")
-				scope.month = new Date().getMonth();
+				scope.month = new moment().month();
 			}
 			scope.monthName = mtus.getMonthFullName(scope.month);
 
