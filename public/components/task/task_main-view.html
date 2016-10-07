@@ -1,0 +1,19 @@
+<div>
+	<!-- Small size view mode -->
+	<div ng-if="view.size.small"></div>
+
+	<!-- Medium size view mode -->
+	<div ng-if="view.size.medium">
+
+		<!-- Chips vis. mode -->
+		<div ng-if="view.mode.chips" ng-include="task_main-view.html"></div>
+		
+	</div>
+
+	<!-- Large size view mode -->
+	<div ng-if="view.size.large"></div>
+
+	<!-- Future vis. type -->
+	<div ng-if="false"></div>
+
+</div>
