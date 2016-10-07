@@ -1,0 +1,32 @@
+a.brand-logo {
+    margin-left:20px;
+}
+
+div.month_picker_main,
+div.year_picker_main {
+    text-align:center;
+}
+span.month_name,
+span.year_number {
+    line-height:37px;
+}
+
+.btn-floating.waves-effect.waves-light.red.next{
+	float:right;
+}
+
+.btn-floating.waves-effect.waves-light.red.prev{
+	float:left;
+}
+
+body > div {
+    margin-bottom:20px;
+}
+
+div#shell {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:250px;
+}
+
