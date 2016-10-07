@@ -22,7 +22,7 @@
 		function linkFunc(scope, elem, attrs, ctrl, transcludeFn, logger, ics) {
             if(!ics.isValidYear(scope.year)) {
 				logger.warn("yearPicker", "year not passed as argument of directive");
-                scope.year = new Date().getFullYear();
+                scope.year = moment().year();
             }
 		}
 	};
